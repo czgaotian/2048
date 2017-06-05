@@ -9,7 +9,7 @@ header h1{
 	font-family: Arial;
 	font-size: 40px;
 	font-weight: bold;
-	margin: 10px auto;
+	margin: 20px auto 10px auto;
 }
 
 header #newgamebutton{
@@ -35,7 +35,29 @@ header #newgamebutton:hover{
 header p{
 	font-family: Arial;
 	font-size: 25px;
-	margin: 10px auto;
+	margin: 10px auto 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+	header {
+		position: flex
+	}
+	header h1 {
+		flex: 1;
+		margin: 0;
+	}
+	header #newgamebutton {
+		flex: 1;
+	}
+	header p{
+		flex: 1;
+		display: inline-block;
+		margin: 0px;
+		margin: 9px 0;
+		line-height: 20px;
+		font-size: 20px;
+	}
+	.clearfloat{clear:both} 
 }
 
 #grid-container{
@@ -43,7 +65,7 @@ header p{
 	height: 460px;
 	padding: 20px;
 
-	margin: 50px auto;
+	margin: 10px auto;
 	background-color: #bbada0;
 
 	border-radius: 10px;
